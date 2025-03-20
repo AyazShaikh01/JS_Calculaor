@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Press Start 2P', cursive;
+        }
+    </style>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="w-screen h-screen bg-neutral-900 flex justify-center items-center">
+    <div id="calc"
+        class="bg-black w-100 h-125 rounded-2xl overflow-hidden flex flex-col justify-center items-center  border-10 border-black shadow-[0px_0px_30px_gray]">
+        <div id="display" class="bg-gray-400 px-2 py-4 w-full h-auto text-4xl text-right font-bold border-6 my-2">
+            <h1 id="answer">1234567890</h1>
+        </div>
+        <div id="buttonBox" class="bg-fuchsia-500 px-3 py-4 w-full h-full flex flex-col justify-center items-center">
+            <div class="w-full h-auto grid grid-cols-4 gap-2 mb-2">
+                <button
+                id="c"
+                    class="px-6 py-3 text-xl text-white uppercase bg-red-800 border-4 border-black shadow-[4px_4px_0px_black] hover:bg-red-700 active:shadow-none">
+                    C
+                </button>
+                <button id="ac"
+                    class="px-6 py-3 text-xl text-white uppercase bg-red-800 border-4 border-black shadow-[4px_4px_0px_black] hover:bg-red-700 active:shadow-none">
+                    AC
+                </button>
+                <button id="%"
+                    class="px-6 py-3 text-xl text-yellow-300 uppercase bg-blue-600 border-4 border-black shadow-[4px_4px_0px_black] hover:bg-blue-700 active:shadow-none">
+                    %
+                </button>
+                <button id="*"
+                    class="px-6 py-3 text-xl text-yellow-300 uppercase bg-blue-600 border-4 border-black shadow-[4px_4px_0px_black] hover:bg-blue-700 active:shadow-none">
+                    *
+                </button>
+            </div>
+
+            <!-- Numeric Buttons -->
+            <div class="w-full h-full flex justify-center items-center px-1">
+                <div id="numericButtons" class="w-full h-full grid grid-cols-3 gap-3 pl-2">
+                    
+                </div>
+
+                <!-- Buttons Calcy -->
+                <div class="h-full grid grid-rows-4 gap-2 pl-5">
+                    <button id="/"
+                        class="px-6 py-3 text-xl text-yellow-300 uppercase bg-blue-600 border-4 border-black shadow-[4px_4px_0px_black] hover:bg-blue-700 active:shadow-none">
+                        /
+                    </button>
+                    <button id="-"
+                        class="px-6 py-3 text-xl text-yellow-300 uppercase bg-blue-600 border-4 border-black shadow-[4px_4px_0px_black] hover:bg-blue-700 active:shadow-none">
+                        -
+                    </button>
+                    <button id="+"
+                        class="px-6 py-3 text-xl text-yellow-300 uppercase bg-blue-600 border-4 border-black shadow-[4px_4px_0px_black] hover:bg-blue-700 active:shadow-none row-span-2">
+                        +
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
